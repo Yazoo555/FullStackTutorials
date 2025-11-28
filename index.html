@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+<title>My website</title>
+<div id="dummydiv"> </div>
+</head>
+
+<body>
+<nav id="navbar">
+<a href="#dummydiv" class="logo-link">
+<span class="logo"></span>
+</a>
+
+<ul class="nav-links">
+<li><a href="#about">About</a></li>
+<li><a href="#skillsection">Skills</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+
+<button class="menu-toggle" id="menu-button">☰</button>
+</nav>
+<div class ="spacediv"> </div>
+
+<section id="hero">
+<video autoplay loop muted id="video-background">
+<source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4" type="video/mp4">
+
+Your browser does not support the video tag.
+</video>
+</section>
+
+<div class ="herowrapper">
+<div class="hero-content">
+<h1>Hi I'm Yajju</h1>
+<h2>Quality Assurance Engineer</h2>
+</div>
+
+<!----------------------- About Section -------- -------------------------->
+<section id="about" class="about">
+<div class="about-wrapper">          <!-- NEW wrapper -->
+<img class="abouticon"
+src="/media/yajju/GAMES/FullStackTutorials/Portfolio-Two/assets/debugging.png"
+alt="debugging icon">
+<p>
+I specialize in web and mobile testing with a strong focus on API automation and building secure CI/CD pipelines. My experience includes testing real-time systems like WebRTC, payment gateways such as eSewa and Khalti, and eLearning platforms. I’m well-versed in Agile methodologies, and I excel in various testing approaches, including black-box, regression, and exploratory testing. Recently, I've expanded my expertise to security testing to ensure applications are robust and secure.
+<br><br>
+Throughout my career, I’ve had the opportunity to work on a diverse range of projects, from testing Flutter apps and APIs to working with real-time classes, payment systems, and chat platforms. I’ve built automated test flows for mobile apps and admin panels, always maintaining a strong focus on quality and reliability. My approach is collaborative, and I actively track defects and ensure the timely delivery of stable releases that impact thousands of users.
+</p>
+</div>
+</section>
+</div>
+
+<!--  This is Skill Section -->
+
+<section id="skillsection" class="skillsection">
+
+<img src="/media/yajju/GAMES/FullStackTutorials/Portfolio-Two/assets
+/workshop.png" class="skill-img left-img" alt="skills">
+
+<div class="skills-wrapper">
+<ul class="skillul">
+
+<li><span>Web & Mobile Testing</span></li>
+<li><span>API Automation</span></li>
+<!--<li><span>Real-Time Systems Testing (WebRTC)</span></li>-->
+<li><span>Selenium</span></li>
+<li><span>CI/CD Pipelines</span></li>
+<li><span>BurpSuite</span></li>
+<li><span>Payment Gateway Testing (eSewa, Khalti)</span></li>
+<li><span>Agile & Scrum</span></li>
+<li><span>Black-box, Regression, & Exploratory Testing</span></li>
+<li><span>Security Testing</span></li>
+</ul>
+</div>
+
+<img src="/media/yajju/GAMES/FullStackTutorials/Portfolio-Two/assets/
+problem-solving-skills.png" class="skill-img right-img" alt="skills">
+
+</section>
+
+<!--	This is for Project Section -->
+
+<section id="projects">
+<div id="projects-grid">
+<a class="project-card" href="https://github.com/Yazoo555/Virtual-Gym-" target="_blank">
+<h3 class="project-title">Virtual Gym - Unity Fitness Experience</h3>
+<p class="project-description">
+A comprehensive virtual gym simulation built with Unity, featuring interactive equipment,
+character models, and realistic workout environments.
+</p>
+</a>
+<a class="project-card" href="https://github.com/Yazoo555/terminalyazu" target="_blank">
+<h3 class="project-title">Terminal Portfolio</h3>
+<p class="project-description">
+A simulated Linux terminal (YaZu OS) where users explore my skills, experience,
+projects, and more through typed commands.
+</p>
+</a>
+<a class="project-card" href="https://github.com/Yazoo555/Tab-Manager" target="_blank">
+<h3 class="project-title">TabLink Collector</h3>
+<p class="project-description">
+A lightweight tab manager that quickly collects and copies all open tab URLs — perfect
+for organizing and sharing browsing sessions.
+</p>
+</a>
+</div>
+</section>
+
+<section id="contact">
+<h2 class="section-title">Contact Me</h2>
+
+<form id="contact-form-id" class="contact-form">
+<div class="form-group">
+<label for="name">Name*</label>
+<input type="text" id="name" placeholder="Your name" required>
+</div>
+
+<div class="form-group">
+<label for="email">Email*</label>
+<input type="email" id="email" placeholder="Your email" required>
+</div>
+
+<div class="form-group">
+<label for="message">Message</label>
+<textarea id="message" rows="5" placeholder="Your message"></textarea>
+</div>
+
+<button type="submit" class="contact-btn">Send Message</button>
+
+<div id="form-message"></div>
+</form>
+</section>
+
+<footer id="footer">
+<p>&copy; 2025 Yajju. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+

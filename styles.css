@@ -1,0 +1,378 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+
+#navbar {
+width: 100%;
+height: 75px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 0 3rem;
+background: #000;       
+position: fixed;
+top: 0;
+left: 0;
+z-index: 999;
+border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+
+.logo {
+display: inline-block;
+width: 65px;
+height: 65px;
+background-image: url('/media/yajju/GAMES/FullStackTutorials/Portfolio-Two/assets/programming.png');
+background-size: contain;
+background-position: center;
+background-repeat: no-repeat;
+border-radius: 20%;
+margin: 5px;
+}
+
+.logo-link {
+text-decoration: none;
+display: inline-block;
+}
+
+
+.nav-links {
+list-style: none;
+display: flex;
+gap: 2.5rem;
+}
+
+.nav-links a {
+text-decoration: none;
+color: #f1f1f1;
+font-size: 1.25rem;
+font-weight: 400;
+transition: 0.25s ease;
+}
+
+
+.nav-links a:hover {
+color: #ffffff;
+border-bottom: 2px solid #ffffff;
+padding-bottom: 4px;
+}
+
+
+.menu-toggle {
+display: none;
+font-size: 2rem;
+background: none;
+border: none;
+color: white;
+}
+
+
+#hero {
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 75px); /* subtract navbar height */
+    overflow: hidden;
+}
+
+#video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;    
+    z-index: -1;         
+}
+
+
+
+.hero-content {
+padding: 1.25rem;
+background: #d29772;
+
+}
+
+.hero-content h1 {
+font-family: "Audiowide", sans-serif;
+font-size: 3.25rem;
+text-align:left;
+}
+
+.hero-content h2{
+margin-left:65px;
+
+}
+
+.herowrapper {
+background: #ded7bd
+}
+
+.about {
+display: flex;
+justify-content: center;    
+padding: 2rem 0;
+}
+
+.about-wrapper {
+display: flex;
+align-items: flex-start;
+gap: 1.25rem;
+max-width: 1450px;      
+
+}
+
+.abouticon {
+width: 300px;          
+height: auto;
+
+}
+
+.about p {
+font-size: 1.25rem;
+color: #333;
+font-family: Georgia, serif;
+line-height: 1.65;
+letter-spacing: 0.25px;
+padding: 0.75rem;
+}
+
+
+
+/*Skill  section ko lagii css*/
+.skillsection {
+padding: 80px 0;
+background: #84929e;
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 45px; /* space between images and skills */
+position: relative;
+}
+
+
+.skill-img {
+width: 205px;       
+
+}
+
+.left-img {
+margin-right: auto; 
+
+}
+
+.right-img {
+margin-left: auto;  
+}
+
+
+.skills-wrapper {
+max-width: 1200px;
+width: 100%;
+padding: 0 25px;
+}
+
+.skillul {
+list-style: none;
+display: flex;
+flex-wrap: wrap;
+gap: 15px;
+padding: 0;
+margin: 0;
+justify-content: center;
+}
+
+.skillul li {
+background: #e1e8ed;
+padding: 12px 22px;
+border-radius: 8px;
+box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+font-size: 16px;
+font-weight: 600;
+border: 1px solid #e0e0e0;
+transition: all 0.5s ease;
+}
+
+.skillul li:hover {
+background: #007bff;
+color: white;
+border-color: #007bff;
+transform: translateY(-3px);
+}
+
+
+#projects {
+padding: 4rem 2rem;
+background: #576b5e;
+color: #475a40;
+}
+
+.section-title {
+text-align: center;
+font-size: 2rem;
+margin-bottom: 2rem;
+}
+
+
+#projects-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+gap: 2rem;
+padding: 2rem 0;
+}
+
+
+.project-card {
+display: block;
+background: #2c2c2c;
+border-radius: 8px;
+padding: 1.5rem;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+color: inherit;
+text-decoration: none;
+transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+
+.project-card:hover {
+transform: translateY(-5px);
+box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.project-title {
+margin-bottom: 0.5rem;
+font-size: 1.5rem;
+}
+
+.project-description {
+font-size: 1rem;
+line-height: 1.5;
+color: #ccc;
+}
+
+#contact {
+padding: 4rem 2rem;
+background: #1e1e1e;
+color: #fff;
+}
+
+.contact-form {
+max-width: 500px;
+margin: 0 auto;
+}
+
+.form-group {
+margin-bottom: 1.2rem;
+display: flex;
+flex-direction: column;
+}
+
+label {
+margin-bottom: 0.5rem;
+font-weight: 600;
+}
+
+input, textarea {
+padding: 0.8rem;
+border: none;
+border-radius: 5px;
+background: #2c2c2c;
+color: #fff;
+font-size: 1rem;
+}
+
+input:focus, textarea:focus {
+outline: 2px solid #4a9eff;
+}
+
+.contact-btn {
+width: 100%;
+padding: 0.8rem;
+border: none;
+border-radius: 5px;
+background: #4a9eff;
+color: #fff;
+font-weight: bold;
+font-size: 1rem;
+cursor: pointer;
+transition: background 0.2s ease;
+}
+
+.contact-btn:hover {
+background: #1f7bd1;
+}
+
+#form-message {
+margin-top: 1rem;
+font-weight: 600;
+}
+
+
+
+/* Desktop / Tablet Styles (Overrides Mobile Styles) */
+@media screen and (min-width: 768px) {
+
+
+#navbar {
+display: flex;
+flex-direction: row;  
+justify-content: space-between;
+align-items: center;
+}
+
+.nav-links {
+display: flex; 
+flex-direction: row;
+width: auto;
+gap: 2rem;
+}
+
+.menu-toggle {
+display: none; 
+}
+
+
+section {
+padding: 4rem 8%;
+}
+
+
+.contact-form {
+max-width: 600px;
+margin: 0 auto;
+}
+}
+
+
+@media (max-width: 768px) {
+
+.nav-links {
+display: none;
+flex-direction: column;
+width: 100%;
+text-align: center;
+}
+
+.menu-toggle {
+display: block;
+}
+
+section {
+padding: 3rem 6%;
+}
+}
+
+
+#footer {
+    width: 100%;
+    padding: 1.5rem 2rem;
+    text-align: center;
+    background-color: #4b4b4b;
+    color: #fff;
+    font-size: 0.9rem;
+}
+
+
+
